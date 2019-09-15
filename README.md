@@ -9,7 +9,11 @@ rails db:schema:load
 ```
 
 ## Development server
-`rails s`
+```
+rails s
+```
 
 ## Launch tests
-`TO DO`
+```
+rspec
+```
