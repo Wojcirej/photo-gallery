@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+}

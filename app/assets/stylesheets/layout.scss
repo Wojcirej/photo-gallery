@@ -1,0 +1,49 @@
+@import 'colors';
+
+.header {
+  background-color: $middle-dark-grey;
+  padding: 30px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.footer {
+  width: 100%;
+  background-color: $dark-grey;
+  padding: 10px;
+  text-align: center;
+  color: $white;
+  position: absolute;
+  bottom: 0px;
+
+  &__menu {
+    display: inline-block;
+    color: $black;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &-link {
+      color: $white;
+      font-weight: 300;
+      display: block;
+      padding: 0.5em;
+      text-decoration: none;
+
+      &:hover {
+        color: $black;
+        background: $white;
+        text-decoration: underline;
+        border-radius: 10px;
+      }
+    }
+  }
+}
