@@ -31,3 +31,6 @@
 
 # Ignore coverage reports from simplecov
 /coverage
+
+# Ignore temporary uploads
+public/uploads/

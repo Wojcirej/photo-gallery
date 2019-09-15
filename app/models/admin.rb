@@ -6,4 +6,5 @@ class Admin < ApplicationRecord
   #:registerable, :rememberable, :confirmable
 
   validates :login, presence: true
+  has_many :photos, foreign_key: :uploader_id
 end

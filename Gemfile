@@ -14,6 +14,8 @@ gem "pry", "~> 0.12.2"
 gem "pry-rails", "~> 0.3.9"
 gem "faker", "~> 2.3"
 gem "devise", "~> 4.7", ">= 4.7.1"
+gem "carrierwave", "~> 1.3", ">= 1.3.1"
+gem "cloudinary", "~> 1.11", ">= 1.11.1"
 
 group :development, :test do
   gem "figaro", "~> 1.1", ">= 1.1.1"
