@@ -13,3 +13,9 @@ test:
   DB_PASSWORD: password
   DB_HOST: localhost
   DB_PORT: '5432'
+
+EMAIL_FROM: 'some@email.com'
+SMTP_SERVER: 'some.smtpserver.com'
+SMTP_PORT: '587'
+SMTP_USERNAME: 'username'
+SMTP_PASSWORD: 'password'

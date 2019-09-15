@@ -9,5 +9,10 @@
     <li class="footer__menu-item">
       <a class="footer__menu-link" href="#top">Back to top</a>
     </li>
+    <% if admin_signed_in? %>
+    <li class="footer__menu-item">
+      <%= link_to 'Logout', destroy_admin_session_path, method: :delete, class: "footer__menu-link" %>
+    </li>
+    <% end %>
   </ul>
 </nav>
