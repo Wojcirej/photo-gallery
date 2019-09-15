@@ -12,6 +12,7 @@ gem "turbolinks", "~> 5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "pry", "~> 0.12.2"
 gem "pry-rails", "~> 0.3.9"
+gem "figaro", "~> 1.1", ">= 1.1.1"
 
 group :development do
   gem "spring"

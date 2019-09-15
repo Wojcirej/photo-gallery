@@ -1,4 +1,4 @@
-require_relative 'boot'
+require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -29,5 +29,8 @@ module PhotoGallery
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.generators do |generator|
+      generator.orm :active_record, primary_key_type: :uuid
+    end
   end
 end
