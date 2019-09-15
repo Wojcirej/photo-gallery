@@ -1,0 +1,15 @@
+development:
+  DB_DATABASE: "photo-gallery_development"
+  DB_POOL: '35'
+  DB_USERNAME: username
+  DB_PASSWORD: password
+  DB_HOST: localhost
+  DB_PORT: '5432'
+
+test:
+  DB_DATABASE: "photo-gallery_test"
+  DB_POOL: '35'
+  DB_USERNAME: username
+  DB_PASSWORD: password
+  DB_HOST: localhost
+  DB_PORT: '5432'
