@@ -7,4 +7,6 @@ class Admin < ApplicationRecord
 
   validates :login, presence: true
   has_many :photos, foreign_key: :uploader_id
+
+  default_scope -> { order("created_at ASC") }
 end

@@ -1,0 +1,17 @@
+<section class="photo">
+  <div class="photo__row photo__image">
+    <img src="<%= @photo.file.url %>" alt="">
+  </div>
+
+  <div class="photo__row photo__filename">
+    <%= @photo.original_filename %>
+  </div>
+
+  <div class="photo__row photo__uploader">
+    Uploaded by <i><%= @photo.uploaded_by %></i>
+  </div>
+
+  <div class="photo__row photo__uploaded_at">
+    Uploaded at <i><%= @photo.uploaded_at %></i>
+  </div>
+</section>

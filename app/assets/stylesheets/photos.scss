@@ -1,0 +1,13 @@
+@import 'colors';
+.photo {
+  color: $black;
+  padding-top: 16px;
+
+  &__row {
+    padding: 4px;
+  }
+
+  &__filename {
+    font-style: italic;
+  }
+}
