@@ -17,9 +17,14 @@
     <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert") do %>
         <%= msg %>
+        <a href="" class="alert__dismiss-link">
+          <span onclick="this.parentElement.style.display='none';">&times;</span>
+        </a>
       <% end %>
     <% end %>
-    <%= yield %>
+    <main class="main">
+      <%= yield %>
+    </main>
     <footer class="footer">
       <%= render 'layouts/footer' %>
     </footer>

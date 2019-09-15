@@ -3,9 +3,11 @@
     <li class="footer__menu-item">
       <a class="footer__menu-link" href="/">Index</a>
     </li>
+    <% unless admin_signed_in? %>
     <li class="footer__menu-item">
       <a class="footer__menu-link" href="/admins/sign_in/">Manage</a>
     </li>
+    <% end %>
     <li class="footer__menu-item">
       <a class="footer__menu-link" href="#top">Back to top</a>
     </li>

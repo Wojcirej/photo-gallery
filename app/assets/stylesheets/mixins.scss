@@ -1,0 +1,71 @@
+@mixin link {
+  padding: 2px 0;
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin buttonShape {
+  border-radius: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+@mixin buttonDefault {
+  color: $black;
+  background-color: $white;
+  border: 1px solid $middle-light-grey;
+
+  &:hover {
+    cursor: pointer;
+    font-style: italic;
+    background-color: $middle-light-grey;
+  }
+}
+
+@mixin buttonSuccess {
+  color: $white;
+  background-color: $green;
+  border: 1px solid $green;
+
+  &:hover {
+    background-color: $darker-green;
+  }
+}
+
+@mixin buttonDanger {
+  color: $white;
+  background-color: $red;
+  border: 1px solid $red;
+
+  &:hover {
+    background-color: $darker-red;
+  }
+}
+
+@mixin formInput {
+  padding: 8px;
+  border: 1px solid $middle-light-grey;
+  border-radius: 10px;
+  width: 100%;
+}
+
+@mixin formInputFocus {
+  outline: none;
+  box-shadow: 0 0 2px 2px $middle-light-grey;
+  border-radius: 10px;
+}
+
+@mixin formSubmitButton {
+  @include buttonShape;
+  @include buttonDefault;
+
+  &:hover {
+    cursor: pointer;
+    font-style: italic;
+    background-color: $middle-light-grey;
+  }
+}

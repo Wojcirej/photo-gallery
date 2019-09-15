@@ -1,0 +1,60 @@
+@import 'colors';
+@import 'mixins';
+
+.form {
+
+  color: $black;
+
+  &__row {
+    width: 100%;
+    padding: 4px 0;
+  }
+
+  &__label {
+    text-transform: none;
+
+    &-url {
+      text-transform: uppercase;
+    }
+  }
+
+  &__annotation {
+    font-style: italic;
+  }
+
+  &__link {
+    display: block;
+    @include link;
+
+    &-inline {
+      display: inline;
+      @include link;
+    }
+  }
+
+  &__input {
+    @include formInput;
+
+    &:focus {
+      @include formInputFocus;
+    }
+  }
+
+  &__submit {
+    @include formSubmitButton;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .form {
+
+    &__row {
+      width: 100%;
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
+}

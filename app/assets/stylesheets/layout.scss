@@ -1,5 +1,26 @@
 @import 'colors';
 
+.alert {
+  color: $dark-blue;
+  background-color: $lighter-blue;
+  border-color: $light-blue;
+  position: relative;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+
+  &__dismiss-link {
+    color: $dark-blue;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
 .header {
   background-color: $middle-dark-grey;
   padding: 30px;
@@ -45,5 +66,21 @@
         border-radius: 10px;
       }
     }
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .footer__menu-list {
+    flex-direction: column;
   }
 }
