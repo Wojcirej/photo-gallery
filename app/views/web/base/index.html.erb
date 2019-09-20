@@ -7,6 +7,7 @@
   <% end %>
 </section>
 
+<% if @photo %>
 <section class="photo">
   <div class="photo__row photo__image">
     <img src="<%= @photo.file.url %>" alt="">
@@ -24,6 +25,7 @@
     Uploaded at <i><%= @photo.uploaded_at %></i>
   </div>
 </section>
+<% end %>
 
 <section class="gallery-navigation">
   <% if @show_next_button %>
