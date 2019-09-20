@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mixins';
 .photo {
   color: $black;
   padding-top: 16px;
@@ -7,7 +8,28 @@
     padding: 4px;
   }
 
+  &__image img {
+    max-height: 550px;
+  }
+
   &__filename {
     font-style: italic;
+  }
+}
+
+.gallery-navigation {
+
+  &__previous {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    @include galleryNavigationButton;
+  }
+
+  &__next {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    @include galleryNavigationButton;
   }
 }

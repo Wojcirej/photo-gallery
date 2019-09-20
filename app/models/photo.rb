@@ -1,4 +1,5 @@
 class Photo < ApplicationRecord
+  self.per_page = 1
   belongs_to :uploader, class_name: "Admin"
   mount_uploader :file, PhotoFileUploader
 

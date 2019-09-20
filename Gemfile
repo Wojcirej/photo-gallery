@@ -16,6 +16,7 @@ gem "faker", "~> 2.3"
 gem "devise", "~> 4.7", ">= 4.7.1"
 gem "carrierwave", "~> 1.3", ">= 1.3.1"
 gem "cloudinary", "~> 1.11", ">= 1.11.1"
+gem "will_paginate", "~> 3.1", ">= 3.1.8"
 
 group :development, :test do
   gem "figaro", "~> 1.1", ">= 1.1.1"

@@ -1,3 +1,12 @@
+<section class="gallery-navigation">
+  <% if @show_previous_button %>
+  <a class="gallery-navigation__previous"
+  href="<%= root_path(page: @current_page - 1) %>">
+    &#8249;
+  </a>
+  <% end %>
+</section>
+
 <section class="photo">
   <div class="photo__row photo__image">
     <img src="<%= @photo.file.url %>" alt="">
@@ -14,4 +23,13 @@
   <div class="photo__row photo__uploaded_at">
     Uploaded at <i><%= @photo.uploaded_at %></i>
   </div>
+</section>
+
+<section class="gallery-navigation">
+  <% if @show_next_button %>
+  <a class="gallery-navigation__next"
+  href="<%= root_path(page: @current_page + 1) %>">
+    &#8250;
+  </a>
+  <% end %>
 </section>
