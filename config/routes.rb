@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     put "admins" => "devise/registrations#update", :as => "admin_registration"
   end
   namespace :web, path: "/", as: "" do
-    resources :photos, only: [:new, :create]
+    resources :photos, only: [:new, :create, :destroy]
   end
 end

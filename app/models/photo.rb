@@ -13,6 +13,10 @@ class Photo < ApplicationRecord
     )
   end
 
+  def owner?(admin_id)
+    admin_id == uploader_id
+  end
+
   def original_filename
     return nil unless file.filename
     file.filename.split("/").last.split("_").last
