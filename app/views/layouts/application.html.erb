@@ -12,7 +12,7 @@
 
   <body>
     <header class="header" id="top">
-      <h1>Photo gallery</h1>
+      <h1><%= ENV.fetch('HEADER', 'Photo gallery') %></h1>
     </header>
     <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert") do %>
