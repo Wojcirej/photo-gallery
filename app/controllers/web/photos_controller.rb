@@ -9,7 +9,7 @@ class Web::PhotosController < Web::BaseController
       flash[:notice] = "Photo uploaded successfully"
       redirect_to root_path
     else
-      flash[:error] = "Something went wrong"
+      flash[:error] = @photo.errors.messages.values.flatten.join("<br>").html_safe
       render :new
     end
   end
