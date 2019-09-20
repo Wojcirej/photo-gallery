@@ -16,6 +16,9 @@
       <%= link_to 'Upload new', new_photo_path, class: "footer__menu-link" %>
     </li>
     <li class="footer__menu-item">
+      <%= link_to 'Edit profile', edit_admin_registration_path, class: "footer__menu-link" %>
+    </li>
+    <li class="footer__menu-item">
       <%= link_to 'Logout', destroy_admin_session_path, method: :delete, class: "footer__menu-link" %>
     </li>
     <% end %>

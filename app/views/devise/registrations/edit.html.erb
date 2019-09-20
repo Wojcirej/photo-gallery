@@ -1,0 +1,58 @@
+<section class="form">
+  <h2>Edit your account</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form__row">
+    <%= f.label :login, class: "form__label" %>
+  </div>
+  <div class="form__row">
+    <%= f.text_field :login, autofocus: true, class: "form__input" %>
+  </div>
+
+  <div class="form__row">
+    <%= f.label :email, class: "form__label" %>
+  </div>
+  <div class="form__row">
+    <%= f.email_field :email, autofocus: true, class: "form__input" %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="form__row">
+    <%= f.label :password, class: "form__label" %>
+    <% if @minimum_password_length %>
+    <small class="form__annotation">(<%= @minimum_password_length %> characters minimum)</small>
+    <% end %>
+  </div>
+  <div class="form__row">
+    <%= f.password_field :password, class: "form__input" %>
+  </div>
+
+  <div class="form__row">
+    <%= f.label :password_confirmation, class: "form__label" %>
+  </div>
+  <div class="form__row">
+    <%= f.password_field :password_confirmation, class: "form__input" %>
+  </div>
+
+  <div class="form__row">
+    <%= f.label :current_password %>
+  </div>
+  <div class="form__row">
+    <small class="form__annotation">(we need your current password to confirm your changes)</small>
+  </div>
+  <div class="form__row">
+    <%= f.password_field :current_password, class: "form__input" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update", class: "form__submit" %>
+  </div>
+<% end %>
+
+<%= link_to "Back", :back, class: "form__link" %>
+</section>
